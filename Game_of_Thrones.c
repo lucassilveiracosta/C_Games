@@ -2,14 +2,13 @@
 #include <time.h>
 #include <stdlib.h>
 
-
 void main()
 {
     int jogar_novamente = 1;
     
     do
     {
-        system("cls");
+        system("cls || clear");
         char westeros[10][10];
         srand(time(NULL));
         int morreu = 0;
@@ -25,8 +24,6 @@ void main()
         
         int l_j = 0, c_j = 0;
         westeros[l_j][c_j] = 'J'; // Jon Snow
-
-        // westeros[0][0] = 'W'; // Winterfell
         westeros[4][4] = 'C'; // Cersei
         westeros[9][9] = 'N'; // Rei da Noite
 
@@ -147,7 +144,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'C' || westeros[l_j][c_j - 1] == 'C' || westeros[l_j + 1][c_j] == 'C' || westeros[l_j][c_j + 1] == 'C') // NEGOCIACAO COM CERESEI
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             for(int i = 0; i < 10; i++)
                             {
@@ -187,7 +184,7 @@ void main()
 
                             if(cont_n >= 3)//Negociacao sucesso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 printf("\nSua negociacao foi um sucesso!\nVoce ganhou mais 100 pontos de vida!");
                                 vida_j += 100;
                                 westeros[4][4] = '_';
@@ -197,7 +194,7 @@ void main()
                             }
                             else    //Negociacao fracasso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 int turnos = 1;
                                 int dado_ataque1, dado_ataque2;
                                 float ataque;
@@ -267,7 +264,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nCersei matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -277,7 +274,7 @@ void main()
                                     }
                                     else if(vida_c <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou Cersei!");
                                         westeros[4][4] = '_';
                                         printf("\nDigite 's' para voltar a westeros\n> ");
@@ -327,7 +324,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'C' || westeros[l_j][c_j - 1] == 'C' || westeros[l_j + 1][c_j] == 'C' || westeros[l_j][c_j + 1] == 'C') // NEGOCIACAO COM CERESEI
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             for(int i = 0; i < 10; i++)
                             {
@@ -367,7 +364,7 @@ void main()
 
                             if(cont_n >= 3)//Negociacao sucesso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 printf("\nSua negociacao foi um sucesso!\nVoce ganhou mais 100 pontos de vida!");
                                 vida_j += 100;
                                 westeros[4][4] = '_';
@@ -377,7 +374,7 @@ void main()
                             }
                             else    //Negociacao fracasso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 int turnos = 1;
                                 int dado_ataque1, dado_ataque2;
                                 float ataque;
@@ -447,7 +444,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nCersei matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -456,7 +453,7 @@ void main()
                                     }
                                     else if(vida_c <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou Cersei!");
                                         westeros[4][4] = '_';
                                         printf("\nDigite 's' para voltar a westeros\n> ");
@@ -506,7 +503,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'C' || westeros[l_j][c_j - 1] == 'C' || westeros[l_j + 1][c_j] == 'C' || westeros[l_j][c_j + 1] == 'C') // NEGOCIACAO COM CERESEI
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             for(int i = 0; i < 10; i++)
                             {
@@ -546,7 +543,7 @@ void main()
 
                             if(cont_n >= 3)//Negociacao sucesso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 printf("\nSua negociacao foi um sucesso!\nVoce ganhou mais 100 pontos de vida!");
                                 vida_j += 100;
                                 westeros[4][4] = '_';
@@ -556,7 +553,7 @@ void main()
                             }
                             else    //Negociacao fracasso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 int turnos = 1;
                                 int dado_ataque1, dado_ataque2;
                                 float ataque;
@@ -626,7 +623,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nCersei matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -635,7 +632,7 @@ void main()
                                     }
                                     else if(vida_c <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou Cersei!");
                                         westeros[4][4] = '_';
                                         printf("\nDigite 's' para voltar a westeros\n> ");
@@ -649,7 +646,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'N' || westeros[l_j][c_j - 1] == 'N' || westeros[l_j + 1][c_j] == 'N' || westeros[l_j][c_j + 1] == 'N')
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             int turnos = 1;
                             int dado_ataque1, dado_ataque2;
@@ -753,7 +750,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nO Rei da Noite matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -763,7 +760,7 @@ void main()
                                     }
                                     else if(vida_rn <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou o Rei da Noite!"); // Jogo acaba pois Rei da noite morreu
                                         printf("\nParabens, voce ganhou o jogo!!");
                                         printf("\nVoce deseja jogar novamente?\n1 - Sim\n2 - Nao\n> ");
@@ -771,7 +768,7 @@ void main()
                                         westeros[9][9] = '_';
                                         morreu = 1;
                                     }
-                                }while(1);
+                                }while(vida_j > 0);
                             }
                         }
                     }
@@ -813,7 +810,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'C' || westeros[l_j][c_j - 1] == 'C' || westeros[l_j + 1][c_j] == 'C' || westeros[l_j][c_j + 1] == 'C') // NEGOCIACAO COM CERESEI
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             for(int i = 0; i < 10; i++)
                             {
@@ -853,7 +850,7 @@ void main()
 
                             if(cont_n >= 3)//Negociacao sucesso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 printf("\nSua negociacao foi um sucesso!\nVoce ganhou mais 100 pontos de vida!");
                                 vida_j += 100;
                                 westeros[4][4] = '_';
@@ -863,7 +860,7 @@ void main()
                             }
                             else    //Negociacao fracasso
                             {
-                                system("cls");
+                                system("cls || clear");
                                 int turnos = 1;
                                 int dado_ataque1, dado_ataque2;
                                 float ataque;
@@ -933,7 +930,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nCersei matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -943,7 +940,7 @@ void main()
                                     }
                                     else if(vida_c <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou Cersei!");
                                         westeros[4][4] = '_';
                                         printf("\nDigite 's' para voltar a westeros\n> ");
@@ -957,7 +954,7 @@ void main()
 
                         if(westeros[l_j - 1][c_j] == 'N' || westeros[l_j][c_j - 1] == 'N' || westeros[l_j + 1][c_j] == 'N' || westeros[l_j][c_j + 1] == 'N')
                         {
-                            system("cls");
+                            system("cls || clear");
 
                             int turnos = 1;
                             int dado_ataque1, dado_ataque2;
@@ -1063,7 +1060,7 @@ void main()
 
                                     if(vida_j <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nO Rei da Noite matou voce...");
                                         printf("\nFIM DE JOGO");
                                         morreu = 1;
@@ -1073,7 +1070,7 @@ void main()
                                     }
                                     else if(vida_rn <= 0)
                                     {
-                                        system("cls");
+                                        system("cls || clear");
                                         printf("\nVoce matou o Rei da Noite!"); // Jogo acaba pois Rei da noite morreu
                                         printf("\nParabens, voce ganhou o jogo!!");
                                         printf("\nVoce deseja jogar novamente?\n1 - Sim\n2 - Nao\n> ");
@@ -1090,7 +1087,7 @@ void main()
                 default:;
             }
         
-            system("cls");
+            system("cls || clear");
         }while(morreu != 1);
 
     }while(jogar_novamente == 1);
